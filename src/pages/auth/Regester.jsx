@@ -1,5 +1,8 @@
+import { toStatement } from "@babel/types";
 import React, { useState } from "react";
 import { auth } from "../../firebase";
+//import { toast ,ToastContainer } from "react-toastify";
+//import "react-toastify/dist/ReactToastify.css"
 
 const Regester = () => {
   const [email, setEmail] = useState("");
@@ -11,6 +14,7 @@ const Regester = () => {
       handleCodeInApp: true,
     };
     await auth.sendSignInLinkToEmail(email, config);
+    //toast.success(`email set successfully) to ${email}`);
     window.localStorage.setItem("emailForRegistration", email);
     setEmail("");
   };
@@ -32,6 +36,7 @@ const Regester = () => {
       <div className="row">
         <div className="col-6 offset-md-3">
           <h4>Register</h4>
+          {/* <ToastContainer/> */}
           {registerForm()}
         </div>
       </div>

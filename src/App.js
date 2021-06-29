@@ -4,6 +4,8 @@ import Login from './pages/auth/Login';
 import Regeter from './pages/auth/Regester';
 import Home from './pages/Home';
 import Header from './components/nav/Header'
+import RegistrationComplete from "./pages/auth/RegisterComplete"
+import RegesterComplete from './pages/auth/RegisterComplete';
 function App() {
   return (
     <>
@@ -11,7 +13,8 @@ function App() {
     <Switch>
       <Route exact path='/' component={Home}></Route>
       <Route exact path='/login' component={Login}></Route>
-      <Route exact path='/regester' component={Regeter}></Route>
+      <Route exact path='/register' component={Regeter}></Route>
+      <Route exact path='/register/complete' component={RegesterComplete}></Route>
     </Switch>
     </>
   );

@@ -25,7 +25,7 @@ setCurrent(e.key);
         </Item>
         
         <Item key="register" icon={<UserAddOutlined/>} className="float-right">
-        <Link to="/regester">Rigester</Link>
+        <Link to="/register">Rigester</Link>
         </Item>
        
        
