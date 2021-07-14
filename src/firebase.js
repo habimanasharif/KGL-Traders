@@ -1,16 +1,15 @@
 import  firebase from 'firebase'
 
- var firebaseConfig = {
-    apiKey: "AIzaSyAkKik8bjU8eeqNH565CG0Vsk1C-mClxtc",
-    authDomain: "cafe-9d2e6.firebaseapp.com",
-    projectId: "cafe-9d2e6",
-    storageBucket: "cafe-9d2e6.appspot.com",
-    messagingSenderId: "208393462885",
-    appId: "1:208393462885:web:8421682ca0550368d2528c",
-    measurementId: "G-H2YRCXEZ80"
-  };
-
-  firebase.initializeApp(firebaseConfig);
+const firebaseConfig = {
+  apiKey: "AIzaSyAXbijz3zJytmPEaVwSN8H_rR_cF4MFX8Q",
+  authDomain: "kgl-traders.firebaseapp.com",
+  projectId: "kgl-traders",
+  storageBucket: "kgl-traders.appspot.com",
+  messagingSenderId: "179572312786",
+  appId: "1:179572312786:web:8ed911c5ecb004f0737b0b"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
 
   export const auth = firebase.auth();
-  export const GoogleProvider =new firebase.auth.GoogleAuthProvider();
+  export const GoogleAuthProvider =new firebase.auth.GoogleAuthProvider();
