@@ -7,9 +7,9 @@ This project contain the following features
 
 ### Firebase Authentiction
  #### This authentication include 
- - [Regestering-with-email]
- - [Email-password-login]
- - [Login-with-google]
- - [Forgot-password]
+ - [Regestering with email]
+ - [Email password login]
+ - [Login with google]
+ - [Forgot password]
 
 
